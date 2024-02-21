@@ -46,7 +46,7 @@ var keyUpEvent = (event) => {
     }
 }
 var logInForm = () => {
-    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/GitHub/portfolio/AmazonClone/index.html";
+    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/GitHub/portfolio/ShoppersStop/index.html";
 }
 
 var c = document.querySelector("#myCanvas");
