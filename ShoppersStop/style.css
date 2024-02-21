@@ -19,10 +19,12 @@
 }
 
 .logo {
-    background-image: url('images/amazon_logo.png');
+    background-image: url('images/logo-no-background.png');
     height: 50px;
     width: 100%;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .border {
@@ -60,7 +62,7 @@
 .nav-search {
     display: flex;
     justify-content: space-evenly;
-    background-color: #F3A847;
+    background-color: #FFDC00;
     width: 620px;
     height: 40px;
     border-radius: 4px;
@@ -99,7 +101,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: #F3A847;
+    background-color: #FFDC00;
     border-radius: 4px;
 }
 
@@ -179,7 +181,7 @@ span {
 }
 
 .hero-section {
-    background-image: url('images/hero_image-1.jpg');
+    background-image: url('https://m.media-amazon.com/images/I/61Pdr3h6MmL._SX3000_.jpg');
     background-size: cover;
     height: 400px;
     display: flex;
@@ -206,7 +208,7 @@ span {
 }
 
 .hero-msg a {
-    color: gold;
+    color: #FFDC00;
 }
 
 .shop-section {
@@ -352,10 +354,10 @@ ul p {
 }
 
 .foot-panel3 .logo {
-    background-image: url('images/amazon_logo.png');
+    background-image: url('images/logo-no-background.png');
     height: 50px;
     width: 100px;
-    background-size: cover;
+    background-size: contain;
 }
 
 .foot-panel4 {

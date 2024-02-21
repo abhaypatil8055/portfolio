@@ -12,7 +12,7 @@ var changeType = () => {
     }
 };
 
-var keyUpEvent = () => {
+var keyUpEvent = (event) => {
     var element = event.target;
     // for first validation
     document.querySelector(".firstCondition").style.display = "block";
@@ -46,5 +46,39 @@ var keyUpEvent = () => {
     }
 }
 var logInForm = () => {
-    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/JS-Mini-Project/AmazonClone/index.html";
+    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/GitHub/portfolio/AmazonClone/index.html";
 }
+
+var c = document.querySelector("#myCanvas");
+var ctx = c.getContext("2d");
+
+
+var getCaptcha = () => {
+    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var captcha = "";
+    var charLength = characters.length;
+    for (var i = 0; i < 6; i++) {
+        captcha += characters.charAt(Math.floor(Math.random() * charLength));
+    }
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0, 0, c.width, c.height); // Clear the previous CAPTCHA
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "#FF4F00";
+    ctx.fillText(captcha, 60, 30); // Draw the CAPTCHA text on the canvas
+    ctx.moveTo(0, 0);
+    ctx.lineTo(230, 42);
+    ctx.moveTo(230, 0);
+    ctx.lineTo(0, 42);
+    ctx.moveTo(20, 0);
+    ctx.lineTo(0, 42);
+    ctx.moveTo(210, 0);
+    ctx.lineTo(180, 42);
+
+    ctx.stroke();
+}
+
+getCaptcha(); // Call the function to initially generate and draw the CAPTCHA
+
+document.getElementById("BtnClick").addEventListener("click", () => {
+    getCaptcha(); // Call the function to generate and draw a new CAPTCHA on button click
+});

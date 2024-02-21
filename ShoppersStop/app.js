@@ -1,5 +1,5 @@
 var getMens = () => {
-    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/JS-Mini-Project/AmazonClone/mensFashion/mensFashion.html";
+    location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/GitHub/portfolio/ShoppersStop/mensFashion/mensFashion.html";
 }
 var getWomen = () => {
     location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/JS-Mini-Project/AmazonClone/womensFashion/womensFashion.html";

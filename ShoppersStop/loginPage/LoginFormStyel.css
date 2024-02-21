@@ -48,6 +48,33 @@ body {
     margin: 0.5em 0;
 }
 
+div input[type=email] {
+    transition: all ease 0.5s;
+}
+
+div input[type=email]:hover {
+    scale: 1.1;
+    border: 1px solid white;
+}
+
+div input[type=password] {
+    transition: all ease 0.5s;
+}
+
+div input[type=password]:hover {
+    scale: 1.1;
+    border: 1px solid white;
+}
+
+div input[type=text] {
+    transition: all ease 0.5s;
+}
+
+div input[type=text]:hover {
+    scale: 1.1;
+    border: 1px solid white;
+}
+
 .container .box input {
     position: absolute;
     width: 100%;
@@ -127,7 +154,17 @@ svg {
 }
 
 footer {
-    position: absolute;
-    bottom: 80px;
     font-size: 0.8rem;
+}
+
+#BtnClick {
+    font-size: 1.5rem;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+canvas {
+    background-color: white;
 }
