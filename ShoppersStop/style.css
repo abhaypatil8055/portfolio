@@ -163,6 +163,7 @@ span {
 .panel-ops input:hover {
     border: 1.5px solid white;
     cursor: pointer;
+    color: #ffff3f;
 }
 
 /* .panel-ops {
@@ -178,6 +179,10 @@ span {
     height: 25px;
     background-color: #195851;
     border: 1.5px solid transparent;
+}
+
+.panel-deals input:hover {
+    color: #d9ed92;
 }
 
 .hero-section {
@@ -200,7 +205,11 @@ span {
     font-size: 0.85rem;
     width: 90%;
     margin-bottom: 50px;
+    transition: all ease 0.5s;
+}
 
+.hero-msg:hover {
+    scale: 1.1;
 }
 
 .hero-msg p {
