@@ -1,0 +1,98 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body {
+    background: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.wrapper {
+    background: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background-color: white;
+    width: 550px;
+    height: auto;
+    border-radius: 7px;
+    transform: translate(0%, 0%);
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    letter-spacing: 3px;
+    height: 40px;
+    padding: 10px 0px 3px 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-style: none;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.question {
+    margin: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.answers {
+    display: grid;
+    gap: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.answers input {
+    padding-left: 30px;
+    text-align: left;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #b8deff;
+    background-color: #F0F8FF;
+}
+
+.answers input:hover {
+    background-color: #D4EDDA;
+    cursor: pointer;
+}
+
+.copyright {
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#retake {
+    display: none;
+    margin-left: 223px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+#retake:hover{
+    cursor: pointer;
+}

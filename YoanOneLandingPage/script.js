@@ -1,0 +1,3 @@
+var reload = () => {
+    location.reload();
+}

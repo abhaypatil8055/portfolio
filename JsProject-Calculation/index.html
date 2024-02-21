@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Calculate</title>
+</head>
+
+<body>
+    <div class="calculate">
+        <div class="main">
+            <div class="num1">
+                <label for="num1">1st Number :</label> <br><br>
+                <input type="text" id="num1">
+                <div class="error1">1st Number is required</div>
+            </div> <br><br>
+            <div class="num2">
+                <label for="num2">2nd Number :</label> <br><br>
+                <input type="text" id="num2">
+                <div class="error2">2nd Number is required</div>
+            </div>
+            <br><br>
+            <div class="result">
+                <label for="result" id="result"><span></span></label> <br><br>
+            </div>
+        </div>
+        <div class="sub-main">
+            <input type="button" value="Add" onclick="add()" id="add"> <br><br>
+            <input type="button" value="Sub" onclick="sub()"><br><br>
+            <input type="button" value="Multiply" onclick="multi()"><br><br>
+            <input type="button" value="Division" onclick="divi()"><br><br>
+            <div class="res">
+                <input type="button" value="Reset" id="reset" onclick="resetValues()">
+            </div>
+        </div>
+    </div>
+    <center>
+        <h4>All Rights Reserved Abhay@2024</h41>
+    </center
+</body>
+
+</html>

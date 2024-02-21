@@ -1,0 +1,129 @@
+* {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .main {
+            background-color: white;
+            height: auto;
+            display: flex;
+            margin: 30px;
+        }
+
+        .block1,
+        .block2,
+        .block3,
+        .block4 {
+            border: 1px solid;
+            height: 90px;
+            width: 90px;
+            margin: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            border-radius: 5px;
+        }
+
+        .block1 {
+            background-image: url("MensFashion/product-2-Image/p1.jpg");
+        }
+
+        .block2 {
+            background-image: url("MensFashion/product-2-Image/p2.jpg");
+        }
+
+        .block3 {
+            background-image: url("MensFashion/product-2-Image/p3.jpg");
+        }
+
+        .block4 {
+            background-image: url("MensFashion/product-2-Image/p4.jpg");
+        }
+
+        .col-2 {
+            /* border: 1px solid; */
+            border-radius: 5px;
+            height: 455px;
+            width: 500px;
+            margin-top: 30px;
+            margin-left: 30px;
+            background-image: url(MensFashion/product-2-image/p4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .col-3 {
+            /* border: 1px solid; */
+            border-radius: 5px;
+            height: auto;
+            width: 500px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .col-3 h1 span {
+            text-decoration: line-through;
+        }
+
+        .color-size {
+            display: flex;
+        }
+
+        .color,
+        .size {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .color p {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .color input {
+            border-radius: 20px;
+        }
+
+        .size {
+            margin-left: 30px;
+        }
+
+        .size p {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .cart input {
+            width: 200px;
+            height: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .col-1 input {
+            width: 100px;
+            height: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 67px;
+            margin-left: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }

@@ -1,0 +1,547 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #000;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .sticky {
+      position: fixed;
+      bottom: 20px;
+
+    }
+
+    .sticky input {
+      width: 100px;
+      height: 30px;
+      margin-left: 15px;
+      background: transparent;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+
+    .sticky input:hover {
+      cursor: pointer;
+      background-color: #FF473E;
+      color: white;
+      border-style: none;
+    }
+
+    a {
+      color: #262626;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Nav */
+    .main-nav {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      padding: 40px 0;
+      font-size: 13px;
+    }
+
+    .main-nav .logo {
+      width: 180px;
+    }
+
+    .main-nav ul {
+      display: flex;
+    }
+
+    .main-nav ul li {
+      padding: 0 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .main-nav ul li a {
+      padding-bottom: 2px;
+    }
+
+    .main-nav ul li a:hover {
+      border-bottom: 2px solid #FF473E;
+    }
+
+    .main-nav ul.main-menu {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .menu-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 2;
+      display: none;
+    }
+
+    .btn {
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid white;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: #FF473E;
+      color: #fff;
+      font-size: 15px;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      color: white;
+      border: 1px solid white;
+      /* background-color: #FF473E; */
+    }
+
+    .dark {
+      color: #fff;
+    }
+
+    .dark .btn {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Showcase */
+    .showcase {
+      margin-top: 20px;
+      width: 100%;
+      height: 400px;
+      background-image: url('images/background.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+    }
+
+    .showcase h1,
+    .showcase p {
+      margin-bottom: 15px;
+      color: white;
+      margin-left: 80px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .showcase h1 {
+      margin-top: 80px;
+    }
+
+    .showcase .btn {
+      margin-top: 20px;
+      margin-left: 80px;
+    }
+
+    #services,
+    #publiccations,
+    #contact {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Home cards */
+    .home-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      margin-bottom: 125px;
+    }
+
+    .home-cards img {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+      margin-bottom: 30px;
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .img1 {
+      background-image: url("images/intent-Based.png");
+    }
+
+    .img2 {
+      background-image: url("images/b2bdatabase.png");
+    }
+
+    .img3 {
+      background-image: url("images/ai.jpg");
+    }
+
+    .img4 {
+      background-image: url("images/content.png");
+    }
+
+    .home-cards h3 {
+      margin-bottom: 5px;
+    }
+
+    .home-cards a {
+      display: inline-block;
+      padding-top: 10px;
+      color: #FF473E;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .home-cards a:hover i {
+      margin-left: 10px;
+    }
+
+    /* Xbox */
+    .xbox {
+      width: 100%;
+      height: 350px;
+      background-image: url('images/xbox.jpg');
+      background-size: cover;
+      margin-bottom: 20px;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+    }
+
+    .xbox .content {
+      width: 30%;
+      padding: 30px 0 0 40px;
+      color: white;
+    }
+
+    .xbox h1 {
+      font-size: 2.5rem;
+    }
+
+    .xbox p,
+    .carbon p {
+      margin: 10px 0 20px;
+    }
+
+    .website-Img1,
+    .website-Img2,
+    .website-Img3,
+    .website-Img4 {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .website-Img1 {
+      background-image: url("images/hub-news.jpg");
+    }
+
+    .website-Img2 {
+      background-image: url("images/insight.png");
+    }
+
+    .website-Img3 {
+      background-image: url("images/global.webp");
+    }
+
+    .website-Img4 {
+      background-image: url("images/Gazeta_Express_Logo.png");
+    }
+
+
+    /* Carbon */
+    .carbon {
+      width: 100%;
+      height: 350px;
+      background: url('images/background2.jpg') no-repeat center center/cover;
+    }
+
+    .carbon .content {
+      width: 50%;
+      padding: 60px 0 0 60px;
+    }
+
+    .carbon .content h2 {
+      font-size: 3rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Follow */
+    .follow {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 50px 0 50px 0;
+    }
+
+    .follow * {
+      margin-right: 10px;
+    }
+
+    /*projects*/
+    .project {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 50px;
+      margin-bottom: 25px;
+      height: 200px;
+    }
+
+    .project .block1,
+    .block2,
+    .block3,
+    .block4 {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .block1 span {
+      color: #FF473E;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+
+    .block2 span {
+      color: #FF473E;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+
+    .block3 span {
+      color: #FF473E;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+
+    .block4 span {
+      color: #FF473E;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+
+    /* Links */
+    .links {
+      background: #f2f2f2;
+      color: #616161;
+      font-size: 12px;
+      padding: 35px 0;
+    }
+
+    .links-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      justify-content: space-evenly
+    }
+
+    .links li {
+      line-height: 2.8;
+      text-align: center;
+    }
+
+    .links li:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: #FF473E;
+      color: white;
+      font-size: 12px;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer span {
+      font-size: 1rem;
+      color: black;
+    }
+
+    ul {
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+
+    .copyright {
+      background-color: #F2F2F2;
+      text-align: center;
+      padding: 20px;
+      letter-spacing: 1px;
+    }
+
+    @media(max-width: 700px) {
+      .menu-btn {
+        display: block;
+      }
+
+      .menu-btn:hover {
+        opacity: 0.5;
+      }
+
+      .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+      }
+
+      .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+      }
+
+      .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+      }
+
+      .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .xbox .content p {
+        display: none;
+      }
+
+      .xbox .content h2 {
+        margin-bottom: 20px;
+      }
+
+      .carbon .content {
+        width: 85%;
+      }
+
+      .links .links-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 500px) {
+      .home-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .links .links-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .links .links-inner ul {
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Add this CSS code to your existing <style> block */
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .btn {
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #262626;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .showcase,
+    .home-cards>div,
+    .xbox .content,
+    .carbon .content,
+    .follow,
+    .project>div {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .home-cards a,
+    .footer a {
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .home-cards a:hover,
+    .footer a:hover {
+      transform: scale(1.1);
+    }
+
+    .follow a {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .follow a:hover {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    #services,
+    #publiccations,
+    #projectDetails,
+    #contactUs,
+    .links,
+    .footer {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: forwards;
+    }

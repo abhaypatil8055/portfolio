@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            border: 1px solid white;
+            width: 300px;
+            border-radius: 15px;
+            background-color: white;
+            height: 300px;
+        }
+
+        .title {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .sub-title {
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 30px;
+            color: mediumvioletred;
+        }
+
+        .date {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        #button {
+            margin-left: 10px;
+            height: 30px;
+            background-color: oldlace;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .msg {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            Age Calculator
+        </div>
+        <div class="sub-title">
+            Enter Your Birthdate Below
+        </div>
+        <div class="date">
+            <input type="date" name="birthdate" id="birthdate">
+            <input type="button" value="Calculate Age" id="button" onclick="calculateAge()">
+        </div>
+        <div class="msg" id="result"></div>
+    </div>
+    <script>
+        var calculateAge = () => {
+            var birthdateInput = document.querySelector("#birthdate").value;
+            var birthdate = new Date(birthdateInput);
+            var currentDate = new Date();
+            var diff = currentDate - birthdate;
+            var age = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
+            document.querySelector("#result").innerHTML = `Your Age is : ${age} Years`;
+        }
+    </script>
+</body>
+
+</html>

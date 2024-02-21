@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator | Abhay</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">Calc</div>
+        <form action="" name="display">
+            <div class="textbar">
+                <input type="text" name="get" id="ad1">
+            </div>
+            <div class="buttonss">
+                <input type="button" value="1" onclick="add1()">
+                <input type="button" value="2" onclick="add2()">
+                <input type="button" value="3" onclick="add3()">
+                <input type="button" value="+" onclick="additon()"> <br>
+                <input type="button" value="4" onclick="add4()">
+                <input type="button" value="5" onclick="add5()">
+                <input type="button" value="6" onclick="add6()">
+                <input type="button" value="-" onclick="sub()"> <br>
+                <input type="button" value="7" onclick="add7()">
+                <input type="button" value="8" onclick="add8()">
+                <input type="button" value="9" onclick="add9()">
+                <input type="button" value="/" onclick="divi()"> <br>
+                <input type="button" value="C" onclick="display.get.value=''" id="cls">
+                <input type="button" value="0" onclick="add0()">
+                <input type="button" value="=" onclick="display.get.value=eval(display.get.value)" id="total">
+                <input type="button" value="x" onclick="mul()"> <br>
+            </div>
+        </form>
+        <div class="title">Made With <span>❤︎</span> By Abhay</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

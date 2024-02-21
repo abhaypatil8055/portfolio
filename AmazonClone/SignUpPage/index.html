@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/1754px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png">
+    <title>Sign Up </title>
+    <style>
+        * {
+            margin: 0px;
+            font-family: cursive;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            background-image: url("images/13900618_5291450.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main {
+            width: 50%;
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .col-1 {
+            width: 50%;
+            background-image: url("images/woman-working-with-laptop_74855-4588.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 15px;
+        }
+
+        .col-2 {
+            background-color: #FFD048;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 40px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #Email {
+            width: 250px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #phone {
+            width: 250px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #password {
+            width: 250px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #signupButton {
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #0E2449;
+            color: white;
+            border-color: white;
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        ::placeholder {
+            padding-left: 10px;
+            color: burlywood;
+        }
+
+        input {
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        ol {
+            color: #0E2449;
+            margin-left: -36px;
+
+        }
+
+        li {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #openEye {
+            display: none;
+        }
+
+        svg {
+            position: relative;
+            right: 40px;
+        }
+
+        .box {
+            margin-left: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <input type="email" id="Email" placeholder="Enter Your Email" maxlength="20">
+                <input type="text" id="phone" placeholder="Enter Your Phone" maxlength="10">
+                <div class="box">
+                    <input type="password" id="password" placeholder="Create Password" onkeyup="keyUpEvent()"
+                        maxlength="8">
+                    <svg onclick="changeType()" id="closedEye" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z" />
+                        <path
+                            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                    </svg>
+                    <svg onclick="changeType()" id="openEye" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                        <path
+                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                    </svg>
+                    <ol>
+                        <li class="firstCondition">Password Must be 8 Characters</li>
+                        <li class="secondCondition">Password Must contain Two Digit</li>
+                        <li class="thirdCondition">Must contain one Special Symbol</li>
+                    </ol>
+                </div>
+
+                <input type="button" value="Sign Up" id="signupButton" onclick="loginPage()">
+            </div>
+        </div>
+        <div class="footer">
+            © 2024 Freakish Abhi
+        </div>
+    </header>
+    <script>
+        var loginPage = () => {
+            location.href = "file:///E:/UIFullStackTraining/VirtualServer/public/JS-Mini-Project/AmazonClone/loginPage/LoginForm.html"
+        }
+
+        var changeType = () => {
+            var pwdElement = document.querySelector("#password");
+            var currentType = pwdElement.getAttribute("type");
+            if (currentType == "password") {
+                pwdElement.setAttribute("type", "text");
+                document.querySelector("#closedEye").style.display = "none";
+                document.querySelector("#openEye").style.display = "inline-block";
+            } else {
+                pwdElement.setAttribute("type", "password");
+                document.querySelector("#closedEye").style.display = "inline-block";
+                document.querySelector("#openEye").style.display = "none";
+            }
+        };
+
+
+        var keyUpEvent = () => {
+            var element = event.target;
+            // first condition
+            document.querySelector(".firstCondition").style.display = "block";
+            if (element.value.length == 8) {
+                document.querySelector(".firstCondition").style.color = "white";
+            } else {
+                document.querySelector(".firstCondition").style.color = "#0E2449";
+            }
+
+            // second conditon
+            document.querySelector(".secondCondition").style.display = "block";
+            var digit = element.value.replace(/[^0-9]/g, "").length;
+            if (digit >= 1 && digit <= 2) {
+                document.querySelector(".secondCondition").style.color = "white";
+            } else {
+                document.querySelector(".secondCondition").style.color = "#0E2449";
+            }
+
+            // third condition 
+            document.querySelector(".thirdCondition").style.display = "block";
+            var specialSymbol = new RegExp("(?=.*[!@#$%^&*])");
+            if (specialSymbol.test(element.value)) {
+                document.querySelector(".thirdCondition").style.color = "white";
+            } else {
+                document.querySelector(".thirdCondition").style.color = "#0E2449"
+            }
+            // hide rules 
+
+            if (element.value.length == "") {
+                document.querySelector(".firstCondition").style.display = "none";
+                document.querySelector(".secondCondition").style.display = "none";
+                document.querySelector(".thirdCondition").style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+            background-color: #A6CAF0;
+        }
+
+        .calculate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            height: 250px;
+        }
+
+        .num1 input,
+        .num2 input,
+        .result input {
+            border: none;
+            height: 30px;
+        }
+
+        .sub-main {
+            margin-top: -70px;
+        }
+
+        .sub-main input {
+            margin-left: 30px;
+            width: 90px;
+            height: 30px;
+            background-color: #FFD700;
+        }
+
+        label {
+            font-size: 1.3rem;
+        }
+
+        input {
+            font-size: 1rem;
+        }
+
+        .res input {
+            font-size: 1.2rem;
+            background-color: springgreen;
+            width: 100px;
+            height: 30px;
+            display: none;
+        }
+        .error1{
+            display: none;
+        }
+        .error2{
+            display: none;
+        }
