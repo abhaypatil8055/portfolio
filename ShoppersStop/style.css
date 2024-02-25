@@ -114,6 +114,16 @@
     height: 1.50rem;
 }
 
+@media only screen and (min-width : 150px) and (max-width: 550px) {
+    .nav-country {
+        display: none;
+    }
+
+    .nav-address {
+        display: none;
+    }
+}
+
 .select-country option {
     color: black;
 }
@@ -160,6 +170,35 @@ span {
     border: 1.5px solid transparent;
 }
 
+@media only screen and (min-width : 150px) and (max-width : 604px) {
+    .panel-ops input {
+        display: none;
+    }
+
+    #panel-all {
+        display: block;
+    }
+}
+
+.panel-all {
+    display: none;
+}
+
+@media only screen and (min-width : 451px) and (max-width : 1080px) {
+    .panel-ops input {
+        width: auto;
+        height: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width : 150px) and (max-width : 1080px) {
+    .panel {
+        width: auto;
+    }
+}
+
 .panel-ops input:hover {
     border: 1.5px solid white;
     cursor: pointer;
@@ -181,6 +220,13 @@ span {
     border: 1.5px solid transparent;
 }
 
+@media only screen and (min-width : 50px) and (max-width : 1080px) {
+    .panel-deals input {
+        width: auto;
+        font-size: 0.7rem;
+    }
+}
+
 .panel-deals input:hover {
     color: #d9ed92;
 }
@@ -192,7 +238,14 @@ span {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
 
+@media only screen and (min-width: 150px) and (max-width: 1079px) {
+    .hero-section {
+        width: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .hero-msg {
@@ -206,6 +259,19 @@ span {
     width: 90%;
     margin-bottom: 50px;
     transition: all ease 0.5s;
+}
+
+@media only screen and (min-width: 130px)and (max-width : 1080px) {
+    .hero-msg {
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .hero-msg p {
+        width: 100%;
+        margin: 10px;
+    }
 }
 
 .hero-msg:hover {
@@ -222,10 +288,18 @@ span {
 
 .shop-section {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #E3E6E6;
     background-image: linear-gradient(#FEF9FF, #D0BDC5);
+}
+
+@media only screen and (min-width : 150px) and (max-width : 680px) {
+    .shop-section {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .box {
@@ -280,6 +354,28 @@ span {
     background-color: #00443F;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 150px) and (max-width : 680px) {
+    .toy-section {
+        height: auto;
+    }
+
+    .main-block {
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .block1 {
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 10px;
+    }
 }
 
 .toy-text {
@@ -340,6 +436,24 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding-top: 40px;
+}
+
+@media only screen and (min-width : 150px) and (max-width : 641px) {
+    .foot-panel2 {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul a {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    ul p {
+        font-size: 0.8rem;
+    }
 }
 
 ul a {
