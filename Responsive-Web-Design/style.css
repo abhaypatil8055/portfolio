@@ -1,0 +1,255 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fefae0;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f7fff7;
+}
+
+.nav-item a {
+    color: #023047;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 130px) and (max-width: 238px) {
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+}
+
+#carouselExampleAutoplaying {
+    height: 590px;
+}
+
+#carouselExampleAutoplaying img {
+    height: 590px;
+}
+
+.navbar-brand img {
+    width: 200px;
+    position: relative;
+    animation: toplogo 5s infinite;
+    z-index: 2;
+    top: 60px;
+}
+
+@keyframes toplogo {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 900px;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 990px) {
+    .navbar-brand img {
+        position: relative;
+        animation: toplogosmall 5s infinite;
+    }
+
+    @keyframes toplogosmall {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 120px;
+        }
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 990px) {
+    .navbar-brand img {
+        width: 150px;
+        top: 30px;
+    }
+}
+
+@media only screen and (min-width : 540px) and (max-width: 733px) {
+    #carouselExampleAutoplaying {
+        height: 480px;
+    }
+
+    #carouselExampleAutoplaying img {
+        height: 480px;
+        left: 20px;
+    }
+}
+
+@media only screen and (min-width : 150px) and (max-width: 540px) {
+    #carouselExampleAutoplaying {
+        height: 300px;
+    }
+
+    #carouselExampleAutoplaying img {
+        height: 300px;
+        left: 20px;
+    }
+}
+
+.container-fluid-1 {
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    margin: 30px;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#card-body {
+    background-color: #ffd60a;
+}
+
+#card-Text {
+    font-size: 1.5rem;
+    font-family: cursive;
+    letter-spacing: 3px;
+    transition: all ease 0.5s;
+}
+
+#card-Text:hover {
+    scale: 1.1;
+    color: #f7fff7;
+}
+
+
+.d-flex a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FE5956;
+}
+
+#ytlogo {
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+#footlogo {
+    width: 200px;
+    animation: rideBike 5s infinite;
+    position: relative;
+}
+
+@keyframes rideBike {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width : 750px) {
+    #footlogo {
+        width: 100px;
+        animation: mybike 5s infinite;
+    }
+
+    @keyframes mybike {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 150px;
+        }
+
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+}
+
+#card-1,
+#card-2,
+#card-3 {
+    transition: all ease 0.5s;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 750px) {
+    .container-fluid-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #txt {
+        font-size: 1rem;
+    }
+
+    /* #card-1 {
+        height: auto;
+
+    }
+
+    #card-2 {
+        height: auto;
+    }
+
+    #card-3 {
+        width: 150px;
+        height: auto;
+    } */
+}
+
+#card-1:hover {
+    scale: 1.1;
+}
+
+#card-2:hover {
+    scale: 1.1;
+}
+
+#card-3:hover {
+    scale: 1.1;
+}
+
+#buttonEnd {
+    margin: 20px auto;
+}
+
+#btnEnd:hover {
+    background-color: #ffd60a;
+    color: white
+}
+
+.container {
+    background-color: #FE5956;
+    color: #f7fff7;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+.container:hover {}
